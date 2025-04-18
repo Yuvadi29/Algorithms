@@ -25,22 +25,5 @@ public class QuickFind {
             }
         }
     }
-
-    public static void main(String[] args) {
-        QuickFind qf = new QuickFind(10);
-    
-        System.out.println("Initially: ");
-        System.out.println("Connected (3, 4)? " + qf.connected(3, 4)); // false
-    
-        qf.union(3, 4);
-        System.out.println("After union(3, 4):");
-        System.out.println("Connected (3, 4)? " + qf.connected(3, 4)); // true
-    
-        qf.union(4, 9);
-        System.out.println("After union(4, 9):");
-        System.out.println("Connected (3, 9)? " + qf.connected(3, 9)); // true
-    
-    }
-
 }
 
